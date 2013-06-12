@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'IconicStroke';
+  src: url("/stylus-seal/iconic/iconic_stroke.eot");
+  src: local('IconicStroke'),
+  url("/stylus-seal/iconic/iconic_stroke.svg#iconic") format('svg'),
+  url("/stylus-seal/iconic/iconic_stroke.otf") format('opentype');
+}
+
+icon(iconType) {
+  &:before {
+    color:inherit;
+    font-family: "IconicStroke";
+    padding-right: 2px;
+
+    content: '!' if iconType == 'home';
+    content: "@" if iconType == 'at';
+    content: '"' if iconType == 'quote';
+    content: "'" if iconType == 'quote-alt';
+    content: "3" if iconType == 'arrow-up';
+    content: "4" if iconType == 'arrow-right';
+    content: "5" if iconType == 'arrow-bottom';
+    content: "6" if iconType == 'arrow-left';
+    content: "#" if iconType == 'arrow-up-alt';
+    content: "$" if iconType == 'arrow-right-alt';
+    content: "%" if iconType == 'arrow-bottom-alt';
+    content: "^" if iconType == 'arrow-left-alt';
+    content: "9" if iconType == 'move';
+    content: "8" if iconType == 'move-vertical';
+    content: "7" if iconType == 'move-horizontal';
+    content: "(" if iconType == 'move-alt';
+    content: "*" if iconType == 'move-vertical-alt';
+    content: "&" if iconType == 'move-horizontal-alt';
+    content: ")" if iconType == 'cursor';
+    content: "+" if iconType == 'plus';
+    content: "=" if iconType == 'plus-alt';
+    content: "-" if iconType == 'minus';
+    content: "_" if iconType == 'minus-alt';
+    content: "1" if iconType == 'new-window';
+    content: "2" if iconType == 'dial';
+    content: "0" if iconType == 'lightbulb';
+    content: "/" if iconType == 'link';
+    content: "?" if iconType == 'image';
+    content: ">" if iconType == 'article';
+    content: "." if iconType == 'read-more';
+    content: "," if iconType == 'headphones';
+    content: "<" if iconType == 'equalizer';
+    content: ":" if iconType == 'fullscreen';
+    content: ";" if iconType == 'exit-fullscreen';
+    content: "[" if iconType == 'spin';
+    content: "{" if iconType == 'spin-alt';
+    content: "]" if iconType == 'moon';
+    content: "}" if iconType == 'sun';
+    content: "\\" if iconType == 'map-pin:';
+    content: "|" if iconType == 'pin';
+    content: "~" if iconType == 'eyedropper';
+    content: "`" if iconType == 'denied';
+    content: "a" if iconType == 'calendar';
+    content: "A" if iconType == 'calendar-alt';
+    content: "b" if iconType == 'bolt';
+    content: "c" if iconType == 'clock';
+    content: "d" if iconType == 'document';
+    content: "e" if iconType == 'book';
+    content: "E" if iconType == 'book-alt';
+    content: "f" if iconType == 'magnifying-glass';
+    content: "g" if iconType == 'tag';
+    content: "h" if iconType == 'heart';
+    content: "i" if iconType == 'info';
+    content: "j" if iconType == 'chat';
+    content: "J" if iconType == 'chat-alt';
+    content: "k" if iconType == 'key';
+    content: "l" if iconType == 'unlocked';
+    content: "L" if iconType == 'locked';
+    content: "m" if iconType == 'mail';
+    content: "M" if iconType == 'mail-alt';
+    content: "n" if iconType == 'phone';
+    content: "o" if iconType == 'box';
+    content: "p" if iconType == 'pencil';
+    content: "P" if iconType == 'pencil-alt';
+    content: "q" if iconType == 'comment';
+    content: "Q" if iconType == 'comment-alt';
+    content: "r" if iconType == 'rss';
+    content: "s" if iconType == 'star';
+    content: "t" if iconType == 'trash';
+    content: "u" if iconType == 'user';
+    content: "v" if iconType == 'volume';
+    content: "V" if iconType == 'mute';
+    content: "w" if iconType == 'cog';
+    content: "W" if iconType == 'cog-alt';
+    content: "x" if iconType == 'x';
+    content: "X" if iconType == 'x-alt';
+    content: "y" if iconType == 'check';
+    content: "Y" if iconType == 'check-alt';
+    content: "z" if iconType == 'beaker';
+    content: "Z" if iconType == 'beaker-alt';
+  }
+}
