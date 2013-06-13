@@ -1,8 +1,313 @@
 @import "../index";
 
+.example code {
+  white-space: pre;
+  width: 100%;
+  overflow: hidden;
+}
+
+.example .item {
+  width: 100%;
+  overflow: hidden;
+}
+
+.pane {
+  width: 100%;
+  overflow: hidden;
+}
+
+.colors-pane .example .item {
+  width: 300px;
+  height: 30px;
+  margin: 10px;
+  line-height: @height;
+  padding: 0 10px;
+  color: #fff;
+
+  &.color-success {
+    background-color: color-success;
+  }
+  &.color-danger {
+    background-color: color-danger;
+  }
+  &.color-primary {
+    background-color: color-primary;
+  }
+  &.color-warning {
+    background-color: color-warning;
+  }
+  &.color-default {
+    background-color: color-default;
+  }
+  &.color-inverse {
+    background-color: color-inverse;
+  }
+  &.color-info {
+    background-color: color-info;
+  }
+}
+
 .buttons-pane {
-  .normal {
-    button: normal;
-    icon: bolt;
+  width: 100%;
+  .default {
+    button: button-default;
+  }
+  .danger {
+    button: button-danger;
+  }
+  .with-icon {
+    button: button-normal;
+    icon: icon-bolt;
+  }
+}
+
+.icons-pane {
+  width: 100%;
+  overflow: hidden;
+  > p {
+    display: block;
+    width: 200px;
+    float: left;
+  }
+
+  .icon-home {
+    icon: icon-home;
+  }
+  .icon-at {
+    icon: icon-at;
+  }
+  .icon-quote {
+    icon: icon-quote;
+  }
+  .icon-quote-alt {
+    icon: icon-quote-alt;
+  }
+  .icon-arrow-up {
+    icon: icon-arrow-up;
+  }
+  .icon-arrow-right {
+    icon: icon-arrow-right;
+  }
+  .icon-arrow-bottom {
+    icon: icon-arrow-bottom;
+  }
+  .icon-arrow-left {
+    icon: icon-arrow-left;
+  }
+  .icon-arrow-up-alt {
+    icon: icon-arrow-up-alt;
+  }
+  .icon-arrow-right-alt {
+    icon: icon-arrow-right-alt;
+  }
+  .icon-arrow-bottom-alt {
+    icon: icon-arrow-bottom-alt;
+  }
+  .icon-arrow-left-alt {
+    icon: icon-arrow-left-alt;
+  }
+  .icon-move {
+    icon: icon-move;
+  }
+  .icon-move-vertical {
+    icon: icon-move-vertical;
+  }
+  .icon-move-horizontal {
+    icon: icon-move-horizontal;
+  }
+  .icon-move-alt {
+    icon: icon-move-alt;
+  }
+  .icon-move-vertical-alt {
+    icon: icon-move-vertical-alt;
+  }
+  .icon-move-horizontal-alt {
+    icon: icon-move-horizontal-alt;
+  }
+  .icon-cursor {
+    icon: icon-cursor;
+  }
+  .icon-plus {
+    icon: icon-plus;
+  }
+  .icon-plus-alt {
+    icon: icon-plus-alt;
+  }
+  .icon-minus {
+    icon: icon-minus;
+  }
+  .icon-minus-alt {
+    icon: icon-minus-alt;
+  }
+  .icon-new-window {
+    icon: icon-new-window;
+  }
+  .icon-dial {
+    icon: icon-dial;
+  }
+  .icon-lightbulb {
+    icon: icon-lightbulb;
+  }
+  .icon-link {
+    icon: icon-link;
+  }
+  .icon-image {
+    icon: icon-image;
+  }
+  .icon-article {
+    icon: icon-article;
+  }
+  .icon-read-more {
+    icon: icon-read-more;
+  }
+  .icon-headphones {
+    icon: icon-headphones;
+  }
+  .icon-equalizer {
+    icon: icon-equalizer;
+  }
+  .icon-fullscreen {
+    icon: icon-fullscreen;
+  }
+  .icon-exit-fullscreen {
+    icon: icon-exit-fullscreen;
+  }
+  .icon-spin {
+    icon: icon-spin;
+  }
+  .icon-spin-alt {
+    icon: icon-spin-alt;
+  }
+  .icon-moon {
+    icon: icon-moon;
+  }
+  .icon-sun {
+    icon: icon-sun;
+  }
+  .icon-map-pin {
+    icon: icon-map-pin;
+  }
+  .icon-pin {
+    icon: icon-pin;
+  }
+  .icon-eyedropper {
+    icon: icon-eyedropper;
+  }
+  .icon-denied {
+    icon: icon-denied;
+  }
+  .icon-calendar {
+    icon: icon-calendar;
+  }
+  .icon-calendar-alt {
+    icon: icon-calendar-alt;
+  }
+  .icon-bolt {
+    icon: icon-bolt;
+  }
+  .icon-clock {
+    icon: icon-clock;
+  }
+  .icon-document {
+    icon: icon-document;
+  }
+  .icon-book {
+    icon: icon-book;
+  }
+  .icon-book-alt {
+    icon: icon-book-alt;
+  }
+  .icon-magnifying-glass {
+    icon: icon-magnifying-glass;
+  }
+  .icon-tag {
+    icon: icon-tag;
+  }
+  .icon-heart {
+    icon: icon-heart;
+  }
+  .icon-info {
+    icon: icon-info;
+  }
+  .icon-chat {
+    icon: icon-chat;
+  }
+  .icon-chat-alt {
+    icon: icon-chat-alt;
+  }
+  .icon-key {
+    icon: icon-key;
+  }
+  .icon-unlocked {
+    icon: icon-unlocked;
+  }
+  .icon-locked {
+    icon: icon-locked;
+  }
+  .icon-mail {
+    icon: icon-mail;
+  }
+  .icon-mail-alt {
+    icon: icon-mail-alt;
+  }
+  .icon-phone {
+    icon: icon-phone;
+  }
+  .icon-box {
+    icon: icon-box;
+  }
+  .icon-pencil {
+    icon: icon-pencil;
+  }
+  .icon-pencil-alt {
+    icon: icon-pencil-alt;
+  }
+  .icon-comment {
+    icon: icon-comment;
+  }
+  .icon-comment-alt {
+    icon: icon-comment-alt;
+  }
+  .icon-rss {
+    icon: icon-rss;
+  }
+  .icon-star {
+    icon: icon-star;
+  }
+  .icon-trash {
+    icon: icon-trash;
+  }
+  .icon-user {
+    icon: icon-user;
+  }
+  .icon-volume {
+    icon: icon-volume;
+  }
+  .icon-mute {
+    icon: icon-mute;
+  }
+  .icon-cog {
+    icon: icon-cog;
+  }
+  .icon-cog-alt {
+    icon: icon-cog-alt;
+  }
+  .icon-x {
+    icon: icon-x;
+  }
+  .icon-x-alt {
+    icon: icon-x-alt;
+  }
+  .icon-check {
+    icon: icon-check;
+  }
+  .icon-check-alt {
+    icon: icon-check-alt;
+  }
+  .icon-beaker {
+    icon: icon-beaker;
+  }
+  .icon-beaker-alt {
+    icon: icon-beaker-alt;
   }
 }
